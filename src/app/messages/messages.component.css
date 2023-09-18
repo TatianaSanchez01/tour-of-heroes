@@ -1,0 +1,31 @@
+.messages-component {
+  margin: 5rem;
+}
+
+h2 {
+  font-size: 28px;
+  margin-right: 2rem;
+}
+
+.messages-config{
+	display: inline-flex;
+
+}
+
+.message-info{
+	margin-top: 1rem;
+}
+
+.clear{
+	height: 100%;
+	border-radius: 15px;
+	background-color: transparent;
+	border: 2px solid;
+	transition: all 0.3s ease-in-out;
+	padding: 10px;
+}
+
+.clear:hover{
+	background-color: #3f525c;
+	color: white;
+}

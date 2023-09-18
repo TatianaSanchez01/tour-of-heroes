@@ -4,15 +4,16 @@ label {
   display: block;
   font-weight: bold;
   font-size: 1.2rem;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-right: 25px;
 }
+
 input {
   padding: 0.5rem;
-  width: 100%;
-  max-width: 600px;
+  width: 300px;
+  height: 100%;
   box-sizing: border-box;
   display: block;
+  margin-right: 10rem;
 }
 
 input:focus {
@@ -22,6 +23,15 @@ input:focus {
 li {
   list-style-type: none;
 }
+
+.search-component {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 2rem;
+  justify-content: right;
+  width: 100%;
+}
+
 .search-result li a {
   border-bottom: 1px solid gray;
   border-left: 1px solid gray;
