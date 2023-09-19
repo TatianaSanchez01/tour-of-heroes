@@ -1,6 +1,4 @@
-<h2>My Heroes</h2>
-
-<div>
+<div class="add-hero">
     <label for="new-hero">Hero name: </label>
     <input id="new-hero" #heroName />
 
@@ -10,11 +8,15 @@
     </button>
 </div>
 
-<ul class="heroes">
-    <li *ngFor="let hero of heroes">
-        <a routerLink="/detail/{{hero.id}}">
-            <span class="badge">{{hero.id}}</span> {{hero.name}}
-        </a>
-        <button type="button" class="delete" title="delete hero" (click)="delete(hero)">x</button>
-    </li>
-</ul>
+<h2>My Heroes</h2>
+
+<div class="heroes-cards">
+    <ul class="heroes">
+        <li *ngFor="let hero of heroes" class="hero-card">
+            <a routerLink="/detail/{{hero.id}}">
+                <span class="badge">{{hero.id}}</span> {{hero.name}}
+            </a>
+            <button type="button" class="delete" title="delete hero" (click)="delete(hero)">x</button>
+        </li>
+    </ul>
+</div>

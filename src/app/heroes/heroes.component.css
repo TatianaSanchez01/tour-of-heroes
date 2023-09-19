@@ -1,9 +1,89 @@
 /* HeroesComponent's private CSS styles */
+h2 {
+  text-align: center;
+  font-size: 48px;
+  color: #201d1a;
+  font-weight: bold;
+}
+
+.add-hero label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 25px;
+}
+
+.add-hero input {
+  padding: 0.5rem;
+  width: 300px;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin-right: 2rem;
+}
+
+.add-hero button {
+  margin-right: 10rem;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.add-hero input:focus {
+  outline: #336699 auto 1px;
+}
+
+.add-hero li {
+  list-style-type: none;
+}
+
+.add-hero {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 2rem;
+  justify-content: right;
+  width: 100%;
+}
+
+.add-hero li a {
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+.add-hero li a:hover {
+  background-color: #435a60;
+  color: white;
+}
+
+ul.add-hero {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.heroes-cards {
+  display: block;
+  margin: auto;
+}
+
 .heroes {
-  margin: 0 0 2em 0;
+  margin-top: 2em;
   list-style-type: none;
   padding: 0;
-  width: 15em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 input {
@@ -17,22 +97,21 @@ input {
 .heroes li {
   position: relative;
   cursor: pointer;
+  padding: 20px;
+  width: 15em;
 }
 
 .heroes li:hover {
-  left: 0.1em;
+  bottom: 0.5em;
 }
 
 .heroes a {
   color: #333;
   text-decoration: none;
   background-color: #eee;
-  margin: 0.5em;
-  padding: 0.3em 0;
-  height: 1.6em;
-  border-radius: 4px;
+  border-radius: 6px;
   display: block;
-  width: 100%;
+  margin: auto;
 }
 
 .heroes a:hover {
@@ -47,19 +126,14 @@ input {
 
 .heroes .badge {
   display: inline-block;
-  font-size: small;
+  margin: auto;
   color: white;
-  padding: 0.8em 0.7em 0 0.7em;
+  padding: 0.8em 0.7em;
   background-color: #405061;
-  line-height: 1em;
   position: relative;
-  left: -1px;
-  top: -4px;
-  height: 1.8em;
-  min-width: 16px;
-  text-align: right;
+  height: 100%;
   margin-right: 0.8em;
-  border-radius: 4px 0 0 4px;
+  border-radius: 6px 0 0 6px;
 }
 
 .add-button {
@@ -75,8 +149,8 @@ input {
 
 button.delete {
   position: absolute;
-  left: 210px;
-  top: 5px;
+  left: 220px;
+  top: 30px;
   background-color: white;
   color: #525252;
   font-size: 1.1rem;

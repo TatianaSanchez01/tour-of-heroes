@@ -1,25 +1,81 @@
 /* HeroDetailComponent's private CSS styles */
-label {
-  color: #435960;
-  font-weight: bold;
+h2{
+  text-align: center;
+  margin: 50px 0;
+  font-size: 30px;
 }
+
 input {
   font-size: 1em;
   padding: 0.5rem;
+  border-radius: 10px;
 }
-button {
+
+
+.hero-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  max-width: 100%;
+}
+
+.hero-description{
+  display: block;
+  margin: 5em;
+}
+
+.hero-id{
+  margin: 25px 0;
+  font-size: 16px;
+}
+
+.hero-id span{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.hero-name-update label{
+  font-weight: bold;
+  font-size: 18px;
+  color: #435960;
+  margin-left: 10em;
+}
+
+.button-back {
   margin-top: 20px;
-  margin-right: 0.5rem;
-  background-color: #eee;
+  margin-right: 3em;
+  background-color: #405061;
   padding: 1rem;
   border-radius: 4px;
   font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #405061;
 }
-button:hover {
-  background-color: #cfd8dc;
+
+.button-back:hover {
+  background-color: transparent;
+  color: #405061;
+  border: 1px solid #405061;
 }
-button:disabled {
-  background-color: #eee;
-  color: #ccc;
-  cursor: auto;
+
+.button-save {
+  margin-top: 20px;
+  margin-right: 3em;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #405061;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #405061;
+}
+
+.button-save:hover {
+  background-color: #405061;
+  color: #fff;
+  border: 1px solid #405061;
 }
