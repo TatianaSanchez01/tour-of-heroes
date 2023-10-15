@@ -25,17 +25,20 @@ li {
 }
 
 .search-component {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   margin-top: 2rem;
   justify-content: right;
   width: 100%;
 }
 
-.search-result li a {
-  border-bottom: 1px solid gray;
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
+.search-result ul {
+  margin-right: 2rem;
+
+}
+
+.search-result ul li a {
+  border: 1px solid gray;
   display: inline-block;
   width: 100%;
   max-width: 600px;
@@ -45,7 +48,7 @@ li {
   color: black;
 }
 
-.search-result li a:hover {
+.search-result ul li a:hover {
   background-color: #435a60;
   color: white;
 }
